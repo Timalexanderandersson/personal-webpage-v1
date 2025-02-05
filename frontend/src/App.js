@@ -18,7 +18,6 @@ function App() {
       <Resumecont/>
       <Footer />
       </div>
-      
     </div>
   );
 }
