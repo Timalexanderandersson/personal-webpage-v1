@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import AboutMe from './components/Aboutme'
 import Myprojectscomp from './components/Myprojects'
 import SkillsSection from './components/Skillssection'
