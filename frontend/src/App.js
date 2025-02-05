@@ -9,11 +9,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <div className='leftcontainer'>
       <AboutMe />
+      </div>
+      <div className='rightcontainer'>
       <Myprojectscomp />
       <SkillsSection />
       <Resumecont/>
       <Footer />
+      </div>
+      
     </div>
   );
 }
