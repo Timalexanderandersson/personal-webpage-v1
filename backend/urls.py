@@ -20,5 +20,6 @@ from .views import helloapi
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', helloapi)
+    path('', helloapi),
+    path("", include("sending_email.urls"))
 ]

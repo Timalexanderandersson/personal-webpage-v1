@@ -1,3 +1,7 @@
 from django.urls import path
+from .views import Sendemailview
 
-path('sendmail', as_view())
+urlpatterns = [
+    path('sendmail', Sendemailview.as_view(),)
+]
+

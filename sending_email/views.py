@@ -10,8 +10,8 @@ from django.conf import settings
 
 # Email views for sending the email.
 
-class Sendemailview(generics.CreateApiView):
-    serializers_class = EmailSerializers
+class Sendemailview(generics.CreateAPIView):
+    serializer_class = EmailSerializers
     queryset = EmailModels.objects.all()
     permission_classes = [permissions.AllowAny]
 
@@ -19,8 +19,8 @@ class Sendemailview(generics.CreateApiView):
         serializers = EmailSerializers(data=request.data)
         if serializers.is_valid():
             emails = serializers.save()
-            self.send_mail(emails)
-            return Response(serializers.data, status=status.HTTP_200_CREATED)
+            self.send_emails(emails)
+            return Response(serializers.data, status=status.HTTP_201_CREATED)
         return Response(serializers.error, status=status.HTTP_400_BAD_REQUEST)
     
     def send_emails(self, emails):
@@ -28,7 +28,7 @@ class Sendemailview(generics.CreateApiView):
         message = (
             f'Name: {emails.name}\n\n'
             f'Email: {emails.email_here}\n\n'
-            f'Description: {emails.descriptions}'
+            f'Description: {emails.description}'
         )
         my_email = settings.EMAIL_HOST_USER
         recipient_list = [settings.EMAIL_HOST_USER]
