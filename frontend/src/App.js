@@ -9,7 +9,6 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
       <AboutMe />
       <Myprojectscomp />
       <SkillsSection />
