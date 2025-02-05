@@ -27,9 +27,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
+
+
+# django rest default
+#REST_FRAMEWORK = {
+ #   'DEFAULT_RENDERER_CLASSES': (
+  #      'rest_framework.renderers.JSONRenderer',
+   # ),
+    #'DEFAULT_PARSER_CLASSES': (
+     #   'rest_framework.parsers.JSONParser',
+   # )
+#}
 
 
 # Application definition

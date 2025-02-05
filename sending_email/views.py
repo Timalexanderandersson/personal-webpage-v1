@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from django.conf import settings
 
 
-# Email views for sending the email.
+# Email views for sending the email post.
 
 class Sendemailview(generics.CreateAPIView):
     serializer_class = EmailSerializers
@@ -21,8 +21,8 @@ class Sendemailview(generics.CreateAPIView):
             emails = serializers.save()
             self.send_emails(emails)
             return Response(serializers.data, status=status.HTTP_201_CREATED)
-        return Response(serializers.error, status=status.HTTP_400_BAD_REQUEST)
-    
+        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
+
     def send_emails(self, emails):
         subject = f'{emails.name} sent a message from your website!'
         message = (
