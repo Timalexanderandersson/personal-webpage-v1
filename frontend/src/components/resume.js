@@ -3,7 +3,7 @@ import styles from '../styles/resume.module.css'
 
 const Resumecont = () => {
     return (
-        <div className={styles.resumediv}> 
+        <div className={styles.resumediv} id="findithere">
             <button>
                 View Resume
             </button>

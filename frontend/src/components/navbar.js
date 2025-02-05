@@ -9,7 +9,7 @@ const Navbar = () => {
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="mailto:timalexanderandersson@hotmail.com">kontakta mig</a></li>
                 <li><a href="#message">Skicka meddelande</a></li>
-                <li><a href="/path/to/your-resume.pdf" download>Download Resume</a></li>
+                <li><a href="#findithere">cv</a></li>
             </ul>
         </nav>
     );
