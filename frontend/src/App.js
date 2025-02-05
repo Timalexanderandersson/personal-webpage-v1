@@ -2,8 +2,8 @@
 import AboutMe from './components/Aboutme'
 import Myprojectscomp from './components/Myprojects'
 import SkillsSection from './components/Skillssection'
-import Navbar from './components/navbar'
 import Footer from './components/Footer';
+import Resumecont from './components/resume'
 import './App.css';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       <AboutMe />
       <Myprojectscomp />
       <SkillsSection />
+      <Resumecont/>
       <Footer />
     </div>
   );
