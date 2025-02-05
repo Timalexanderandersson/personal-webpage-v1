@@ -14,7 +14,6 @@ function App() {
       <Myprojectscomp />
       <SkillsSection />
       <Footer />
-      
     </div>
   );
 }
