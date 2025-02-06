@@ -3,3 +3,10 @@
     height: 20vh;
     margin-top: 10vh;
 }
+.footericons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

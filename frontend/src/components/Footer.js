@@ -4,7 +4,10 @@ import styles from '../styles/footer.module.css'
 const Footer = () => {
     return (
         <footer className={styles.footerdiv}>
-            <p>&copy; Tim Andersson. Denna sida är gjord med Django REST och React.</p>
+            <div className={styles.footericons}>
+                <p>&copy; Tim Andersson.</p>
+            <p> Denna websida är gjord med Django REST <i class="fa-brands fa-python"> </i> och med React <i class="fa-brands fa-react"></i>.</p>
+            </div>
         </footer>
     );
 };
