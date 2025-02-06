@@ -2,18 +2,24 @@
     background-color: #23394d;
     max-height: 40vh;
     height: auto;
-    transition: all 0.3s ease-in-out;
+    max-width: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center
 }
 
-
+.newdiv {
+    max-width: 90%;
+}
 
 .links {
     margin-top: 2vh;
     font-size: 1.5rem;
     height: 10vh;
-    margin-left: 4vh;
+    margin-left: 2vh;
     display: flex;
     justify-content: center;
+    padding-top: 2vh;
 
 }
 
@@ -22,8 +28,9 @@
     justify-content: center;
     max-width: 4vh;
     max-height: 4vh;
-    margin-right: 2vh;
-    margin-left: 3vh;
+    margin-right: 4vh;
+    margin-left: 7vh;
+
 }
 
 .linkedinlink {
@@ -32,7 +39,7 @@
     max-width: 4vh;
     max-height: 4vh;
     ;
-    margin-right: 2vh;
+    margin-right: 4vh;
 }
 
 .instagramlink {
@@ -40,17 +47,17 @@
     justify-content: center;
     max-width: 4vh;
     max-height: 4vh;
-    margin-right: 2vh;
+    margin-right: 4vh;
 }
 
-
-a {
+.iconlife {
     margin-right: 4vh;
     transition: all 0.2s ease-in-out;
-
+    color: #afc3d6;
 }
 
-a:hover {
+
+.iconlife:hover {
     color: white;
     font-size: 1.7rem;
 }

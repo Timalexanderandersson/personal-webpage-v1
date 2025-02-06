@@ -4,13 +4,13 @@ import styles from '../styles/navbar.module.css'
 const Navbar = () => {
     return (
         <nav className={styles.navbardiv}>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="mailto:timalexanderandersson@hotmail.com">kontakta mig</a></li>
-                <li><a href="#message">Skicka meddelande</a></li>
-                <li><a href="#findithere">cv</a></li>
-            </ul>
+            <div className={styles.linkContainer}>
+                <div className={styles.linkWrapper}><a className={styles.navLink} href="#projects">Projekt</a></div>
+                <div className={styles.linkWrapper}><a className={styles.navLink} href="#skills">Skills</a></div>
+                <div className={styles.linkWrapper}><a className={styles.navLink} href="mailto:timalexanderandersson@hotmail.com">Kontakta mig</a></div>
+                <div className={styles.linkWrapper}><a className={styles.navLink} href="#message">Skicka meddelande</a></div>
+                <div className={styles.linkWrapper}><a className={styles.navLink} href="#findithere">CV</a></div>
+            </div>
         </nav>
     );
 };
