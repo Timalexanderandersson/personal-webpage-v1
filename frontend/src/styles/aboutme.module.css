@@ -1,7 +1,7 @@
 .aboutmediv {
     background-color:#23394d;
     height: 30vh;
-    
+    transition: all 0.3s ease-in-out;
 }
 
 @media(min-width: 768px) {
