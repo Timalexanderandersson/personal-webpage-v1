@@ -1,27 +1,27 @@
 .storadiv {
-    background-color:#23394d;
-    height: 40vh;
+    background-color: #23394d;
+    height: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 7vh;
+
+}
+
+.aboutmecontainer {
+    background-color: #23394d;
+    max-width: 60vh;
+    height: auto;
+    padding: 2vh;
     padding-top: 3vh;
-   
-}
 
-.aboutmecontainer{ 
-    background-color:#23394d;
-    width: 100%;
-    height: 100%;
-    padding:2vh;
-    
 
 }
-.aboutmecontainer:hover{ 
-    background-color:#23394d;
+
+.aboutmecontainer:hover {
+    background-color: #23394d;
     box-shadow: 1px 2px 4px 4px rgba(160, 160, 160, 0.3);
     border-radius: 4vh;
-    background-color:#253b4d;
+    background-color: #253b4d;
     transition: all 0.6s ease-in-out;
-    width: 92%;
-    height: 40vh;
+    width: 70vh;
+   
 }

@@ -1,23 +1,27 @@
 .navbardiv {
     background-color: #23394d;
-    height: 30vh;
+    height:27vh;
     margin-top: 3vh;
+
 }
 
 .linkContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 2vh;
+    margin-left: 1vh;
+   
 }
 .linkWrapper{
  height: 3vh;
- margin-bottom: 3vh;
+ margin-bottom: 2vh;
+
 }
 
 .navLink {
     margin-bottom: 2vh;
     text-decoration: none;
     color: #afc3d6;
+
 }
 
 .navLink:hover {
