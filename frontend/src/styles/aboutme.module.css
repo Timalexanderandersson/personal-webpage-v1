@@ -1,8 +1,60 @@
 .aboutmediv {
-    background-color:#23394d;
-    height: 30vh;
+    background-color: #23394d;
+    max-height: 40vh;
+    height: auto;
     transition: all 0.3s ease-in-out;
 }
+
+
+
+.links {
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    height: 10vh;
+    margin-left: 4vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.githublink {
+    display: flex;
+    justify-content: center;
+    max-width: 4vh;
+    max-height: 4vh;
+    margin-right: 2vh;
+    margin-left: 3vh;
+}
+
+.linkedinlink {
+    display: flex;
+    justify-content: center;
+    max-width: 4vh;
+    max-height: 4vh;
+    ;
+    margin-right: 2vh;
+}
+
+.instagramlink {
+    display: flex;
+    justify-content: center;
+    max-width: 4vh;
+    max-height: 4vh;
+    margin-right: 2vh;
+}
+
+
+a {
+    margin-right: 4vh;
+    transition: all 0.2s ease-in-out;
+
+}
+
+a:hover {
+    color: white;
+    font-size: 1.7rem;
+}
+
 
 @media(min-width: 768px) {
     .aboutmediv {

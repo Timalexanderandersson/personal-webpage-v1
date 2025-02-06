@@ -5,6 +5,7 @@ import SkillsSection from './components/Skillssection'
 import Footer from './components/Footer';
 import Resumecont from './components/resume'
 import SendingEmail from './components/sendingemail';
+import Allaboutbio from './components/Allaboutme';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <AboutMe />
       </div>
       <div className='rightcontainer'>
+      <Allaboutbio />
       <Myprojectscomp />
       <SkillsSection />
       <Resumecont/>

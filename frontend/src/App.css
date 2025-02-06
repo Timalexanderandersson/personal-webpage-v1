@@ -4,24 +4,26 @@
   padding: 0;
   height: auto;
   scroll-behavior:smooth;
+
 }
+
 p {
-  font-family: "M PLUS Rounded 1c", serif;
+  font-family: "Liter", serif;
   font-weight: 200;
   color:#f2f4f3;
 }
 h1 {
-  font-family: "M PLUS Rounded 1c", serif;
+  font-family: "Liter", serif;
   font-weight: 500;
   color:#f2f4f3;
 }
 h2 {
-  font-family: "M PLUS Rounded 1c", serif;
+  font-family: "Liter", serif;
   font-weight: 600;
   color:#f2f4f3;
 }
 h3 {
-  font-family: "M PLUS Rounded 1c", serif;
+  font-family: "Liter", serif;
   font-weight: 600;
   color:#f2f4f3;
 }
