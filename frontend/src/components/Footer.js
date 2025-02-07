@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer className={styles.footerdiv}>
             <div className={styles.footericons}>
-                <p>&copy; Tim Andersson.</p>
-            <p> Denna websida är gjord med Django REST <i class="fa-brands fa-python"> </i> och med React <i class="fa-brands fa-react"></i>.</p>
+                <p className={styles.madeWith}>&copy; Tim Andersson.</p>
+                <p className={styles.madeWith}>Denna websida är gjord med Django REST <i class="fa-brands fa-python"> </i> och med React <i class="fa-brands fa-react"></i>.</p>
             </div>
         </footer>
     );
