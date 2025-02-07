@@ -5,7 +5,10 @@
     max-width: 100%;
     width: fit-content;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding-top: 2vh;
+    text-align: left;
+    
 }
 
 .newdiv {

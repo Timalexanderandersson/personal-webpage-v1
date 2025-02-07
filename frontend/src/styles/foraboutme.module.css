@@ -3,25 +3,51 @@
     height: auto;
     display: flex;
     justify-content: center;
+    
 
 }
 
 .aboutmecontainer {
     background-color: #23394d;
-    max-width: 60vh;
-    height: auto;
+    max-width: 65vh;
     padding: 2vh;
-    padding-top: 3vh;
-
+    padding-top: 6vh;
+    height: auto;
+    text-align: left;
 
 }
+.fixingit{
+    margin-top: 4vh;
+    border:  1px solid #c3cacf;
 
-.aboutmecontainer:hover {
-    background-color: #23394d;
-    box-shadow: 1px 2px 4px 4px rgba(160, 160, 160, 0.3);
-    border-radius: 4vh;
-    background-color: #253b4d;
-    transition: all 0.6s ease-in-out;
-    width: 70vh;
-   
+}
+.fixingit2{
+    display: flex;
+    justify-items: center;
+    width: 50%;
+    border:  1px solid #c3cacf;
+}
+
+.fixingit3{
+    display: flex;
+    justify-items: center;
+    width: 40%;
+    border:  1px solid #c3cacf;
+}
+.fixingit4{
+    display: flex;
+    justify-items: center;
+    width: 30%;
+    border:  1px solid #c3cacf;
+}
+.fixingit5{
+    display: flex;
+    justify-items: center;
+    width: 20%;
+    border:  1px solid #c3cacf;
+}
+@media (min-width: 1100px) {
+    .aboutmecontainer {
+        max-width: 80vh;
+    }
 }
