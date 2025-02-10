@@ -89,6 +89,8 @@ padding-left: 3vh;
     font-size: 1.2rem;
     font-weight: 500;
 }
+/*Lines css styling*/
+
 
 @media screen and (min-width: 300px) {
     .projectImage {

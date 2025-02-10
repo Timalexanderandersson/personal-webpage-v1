@@ -6,8 +6,9 @@ import frontImage3 from '../assets/frågorispel.PNG';
 import frontImage4 from '../assets/rockpaper.PNG';
 import frontImage5 from '../assets/dawdawdad.PNG';
 
+
 const Myprojectscomp =  () => {
-    return (
+    return (<>
         <div className={styles.projectsdiv} id="projects">
             <h2 className={styles.projectTitle}>Projekt</h2>
             <div className={styles.project}>
@@ -103,7 +104,10 @@ const Myprojectscomp =  () => {
                 <a className={styles.githublink} href="https://github.com/Timalexanderandersson/Get-More-Sleep-Website" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
                 </div>
             </div>
+                
         </div>
+        
+        </>
     )
 }
 
