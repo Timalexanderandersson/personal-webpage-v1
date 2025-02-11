@@ -1,5 +1,5 @@
 .projectsdiv {
-    background-color:#23394d;
+    background-color: #23394d;
     height: auto;
     padding-top: 4vh;
     width: 100%;
@@ -8,26 +8,25 @@
     align-items: center;
 }
 
-.project{
+.project {
     max-height: 73vh;
     height: auto;
     margin-bottom: 3vh;
-    width:90%;
+    width: 90%;
 
 }
 
 
-
-
-.project:hover{ 
-    background-color:#23394d;
+.project:hover {
+    background-color: #23394d;
     box-shadow: 1px 2px 4px 4px rgba(160, 160, 160, 0.3);
     border-radius: 4vh;
-    background-color:#253b4d;
+    background-color: #253b4d;
     transition: all 0.6s ease-in-out;
     width: 90%;
 }
-.projectImage{
+
+.projectImage {
     width: 10vh;
     height: 10vh;
     border-radius: 3px;
@@ -37,62 +36,70 @@
     transition: all 0.5s ease-in-out;
 }
 
-.projectContent{
+.projectContent {
     display: flex;
     padding-top: 1vh;
-padding-left: 3vh;
+    padding-left: 3vh;
 }
-.projectLink{
+
+.projectLink {
     text-decoration: none;
-    color:#afc3d6;
+    color: #afc3d6;
     font-size: 1.2rem;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
 }
 
-.projectLink:hover{
+.projectLink:hover {
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 1.2rem;
     font-weight: 500;
 }
-.projectTech{
-    color:#afc3d6;
+
+.projectTech {
+    color: #afc3d6;
     font-size: 0.8rem;
     font-weight: 500;
     padding-left: 2vh;
 }
-.divtach{
+
+.divtach {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+
 }
-.projectDescription{
+
+.projectDescription {
     margin-left: 1vh;
     margin-top: 2vh;
     padding-top: 1vh;
     text-align: left;
 }
-.projectTitle{
+
+.projectTitle {
     margin-bottom: 2vh;
 }
-.githublink{
+
+.githublink {
     text-decoration: none;
-    color:#afc3d6;
+    color: #afc3d6;
     font-size: 1.2rem;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     padding-left: 2vh;
     margin-bottom: 2vh;
-    
+
 }
-.githublink:hover{
+
+.githublink:hover {
     text-decoration: none;
-    color:white;
+    color: white;
     font-size: 1.2rem;
     font-weight: 500;
 }
+
 /*Lines css styling*/
 
 
@@ -104,18 +111,21 @@ padding-left: 3vh;
         margin-top: 3vh;
         margin-bottom: 3vh;
     }
-    .projectTech{
-        color:#afc3d6;
+
+    .projectTech {
+        color: #afc3d6;
         font-size: 0.8rem;
         font-weight: 500;
         padding-left: 2vh;
     }
-    .projectDescription{
+
+    .projectDescription {
         margin-top: 2vh;
         margin-left: 1vh;
         margin-right: 1vh;
     }
-} 
+}
+
 @media screen and (min-width: 550px) {
     .projectImage {
         width: 13vh;
@@ -123,37 +133,38 @@ padding-left: 3vh;
         margin-top: 2vh;
         margin-bottom: 2vh;
     }
+
     .projectTech {
         font-size: 1rem;
         padding-left: 5vh;
     }
+
     .projectDescription {
         margin-top: 1.5vh;
         margin-left: 2vh;
         margin-right: 1.5vh;
     }
-    .project{
-       
-        width:90%;
+
+    .project {
+
+        width: 90%;
     }
-    
-    .project:hover{ 
-     
+
+    .project:hover {
+
         width: 90%;
     }
 }
 
 @media screen and (min-width: 1000px) {
 
-    .project{
-       
-        width:70%;
+    .project {
+
+        width: 70%;
     }
-    
-    .project:hover{ 
-     
+
+    .project:hover {
+
         width: 70%;
     }
 }
-
-

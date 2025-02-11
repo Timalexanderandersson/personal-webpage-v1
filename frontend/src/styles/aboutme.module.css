@@ -1,6 +1,6 @@
 .aboutmediv {
     background-color: #23394d;
-    max-height: 40vh;
+    max-height: 43vh;
     height: auto;
     max-width: 100%;
     width: fit-content;
@@ -8,7 +8,7 @@
     justify-content: center;
     padding-top: 2vh;
     text-align: left;
-    
+
 }
 
 .newdiv {
@@ -16,13 +16,13 @@
 }
 
 .links {
-    margin-top: 2vh;
+    margin-top: 1vh;
+
     font-size: 1.5rem;
-    height: 10vh;
+    height: auto;
     margin-left: 2vh;
     display: flex;
     justify-content: center;
-    padding-top: 3vh;
 
 }
 
@@ -68,6 +68,30 @@
 
 @media(min-width: 768px) {
     .aboutmediv {
-        height: 50vh
+        height: 34vh;
+
     }
+
+    .links {
+        padding-top: 3vh;
+        font-size: 1.6rem;
+        margin-left: 2vh;
+
+    }
+
+}
+
+@media(min-width: 850px) {
+    .aboutmediv {
+        height: 33vh;
+        margin-left: 2vh;
+    }
+
+    .links {
+        padding-top: 3vh;
+        font-size: 1.6rem;
+        margin-left: 1vh;
+
+    }
+
 }

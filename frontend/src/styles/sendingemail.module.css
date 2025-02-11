@@ -1,23 +1,24 @@
 .sendingemaildiv {
     padding-bottom: 4vh;
-    background-color:#23394d;
+    background-color: #23394d;
     display: flex;
     justify-content: center;
     height: 90%;
     padding-top: 3vh;
 }
 
-.emailcontainer { 
-    background-color:#23394d;
+.emailcontainer {
+    background-color: #23394d;
     box-shadow: 1px 2px 4px 4px rgba(160, 160, 160, 0.3);
     border-radius: 4vh;
-    background-color:#253b4d;
+    background-color: #253b4d;
     transition: all 0.6s ease-in-out;
     width: 80%;
-    height:90%;
-    
+    height: 90%;
+
 }
-.formcontainer{
+
+.formcontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,18 +28,21 @@
     font-size: 1rem;
     font-weight: 600;
 }
-.heading{
+
+.heading {
     margin-top: 1vh;
     color: #afc3d6;
-   
-    
+
+
 }
-.alllmylables{
+
+.alllmylables {
     color: #afc3d6;
-    
+
 }
-.coolbutton{
-    background-color:#253b4d;
+
+.coolbutton {
+    background-color: #253b4d;
     color: #afc3d6;
     border: 1px solid #afc3d6;
     border-radius: 1vh;
@@ -46,15 +50,18 @@
     margin-top: 2vh;
     transition: all 0.2s ease-in-out;
 }
-.coolbutton:hover{
-    background-color:#394c5c;
+
+.coolbutton:hover {
+    background-color: #394c5c;
     border: 1px solid #afc3d6;
 }
-.coolbutton:active{
+
+.coolbutton:active {
     background-color: #ffffff;
     color: #253b4d;
     border: 1px solid #afc3d6;
 }
+
 @media (min-width: 400px) {
 
     .emailcontainer {
@@ -69,12 +76,14 @@
         width: 90%;
         height: 90%;
     }
-    .formcontainer{
+
+    .formcontainer {
         min-width: 100%;
         font-size: 1.3rem;
         font-weight: 600;
     }
-    .allinputs{
+
+    .allinputs {
         width: 75%
     }
 }
@@ -85,12 +94,14 @@
         width: 90%;
         height: 80%;
     }
-    .formcontainer{
+
+    .formcontainer {
         min-width: 100%;
         font-size: 1.3rem;
         font-weight: 600;
     }
-    .allinputs{
+
+    .allinputs {
         width: 70%
     }
 }
@@ -101,14 +112,17 @@
         width: 80%;
         height: 65%;
     }
+
     .formcontainer {
         min-width: 100%;
         font-size: 1.2rem;
     }
+
     .allinputs {
         width: 70%;
     }
 }
+
 @media (min-width: 1400px) {
     .emailcontainer {
         margin-top: 15vh;
@@ -116,10 +130,12 @@
         width: 100%;
         height: 65%;
     }
+
     .formcontainer {
         min-width: 70%;
         font-size: 1.2rem;
     }
+
     .allinputs {
         width: 70%;
     }

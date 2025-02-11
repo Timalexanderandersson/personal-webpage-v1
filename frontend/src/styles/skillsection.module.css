@@ -1,19 +1,20 @@
-.skillsectiondiv{ 
-    background-color:#23394d;
+.skillsectiondiv {
+    background-color: #23394d;
     display: flex;
     justify-content: center;
     padding-bottom: 2vh;
-    
+
 }
 
-.skillcontainer{ 
-    background-color:#23394d;
-    padding:2vh;
+.skillcontainer {
+    background-color: #23394d;
+    padding: 2vh;
     width: 95%;
-   
+
 
 }
-.containsall{ 
+
+.containsall {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,27 +22,34 @@
     font-weight: 600;
 }
 
-.skillcontainer:hover{ 
-    background-color:#23394d;
+.skillcontainer:hover {
+    background-color: #23394d;
     box-shadow: 1px 2px 4px 4px rgba(160, 160, 160, 0.3);
     border-radius: 4vh;
-    background-color:#253b4d;
+    background-color: #253b4d;
     transition: all 0.6s ease-in-out;
     width: 95%;
 
 }
-.technopart, .versionss, .database, .tools, .distrubuuut, .testing{
+
+.technopart,
+.versionss,
+.database,
+.tools,
+.distrubuuut,
+.testing {
     color: #afc3d6;
     list-style-type: none;
 }
 
 
-.deletliststyle{
+.deletliststyle {
     list-style-type: none;
     padding-right: 3vh;
-    
+
 }
-.heading{
+
+.heading {
     color: #dde4eb;
     font-size: 1.2rem;
     font-weight: 600;
@@ -49,7 +57,7 @@
     margin-bottom: 2vh;
 }
 
-li{
+li {
     font-size: 1rem;
     font-weight: 500;
     margin-top: 1vh;
@@ -57,8 +65,9 @@ li{
 }
 
 @media (min-width: 768px) {
-    
-    .divfirsttop, .divfirstbottom{
+
+    .divfirsttop,
+    .divfirstbottom {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -67,30 +76,33 @@ li{
         font-size: 1rem;
         font-weight: 600;
     }
-    li{
+
+    li {
         font-size: 0.8rem;
         font-weight: 500;
         margin-top: 1vh;
         margin-bottom: 1vh;
     }
-    .heading{
+
+    .heading {
         color: #dde4eb;
         font-size: 1.1rem;
         font-weight: 600;
         padding-left: 3vh;
-    
+
     }
 }
 
-@media (min-width: 850px){
-    .heading{
+@media (min-width: 850px) {
+    .heading {
         color: #dde4eb;
         font-size: 1.3rem;
         font-weight: 600;
         padding-left: 2vh;
-    
+
     }
-    li{
+
+    li {
         font-size: 1rem;
         font-weight: 500;
         margin-top: 1vh;
@@ -98,52 +110,62 @@ li{
     }
 
 }
+
 @media (min-width: 950px) {
     .heading {
         margin-left: 1vh;
-        
+
     }
-    .tools{
+
+    .tools {
         width: 17vh;
     }
-    .testing{
+
+    .testing {
         width: 16vh;
     }
-  
+
 }
+
 @media (min-width: 1100px) {
     .heading {
         font-size: 1.4rem;
         padding-left: 1vh;
     }
-    .tools, .testing {
+
+    .tools,
+    .testing {
         width: 20vh;
     }
-    .divfirsttop, .divfirstbottom{
-       height: 27vh;
+
+    .divfirsttop,
+    .divfirstbottom {
+        height: 27vh;
     }
-    .skillcontainer:hover{ 
-        height: auto;
-    
-    }
-   
-}
-@media (min-width: 1200px) {
-   
-    
+
     .skillcontainer:hover {
-        
+        height: auto;
+
     }
-    .technopart, .versionss, .database, .tools, .distrubuuut, .testing{
+
+}
+
+@media (min-width: 1200px) {
+
+    .technopart,
+    .versionss,
+    .database,
+    .tools,
+    .distrubuuut,
+    .testing {
         margin-right: 2vh;
     }
-    .skillcontainer:hover{ 
-       
+
+    .skillcontainer:hover {
         width: 80%;
-    
     }
-    .skillcontainer{ 
+
+    .skillcontainer {
         width: 80%;
-       
     }
 }

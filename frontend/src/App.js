@@ -9,6 +9,8 @@ import { Route, Routes } from "react-router-dom";
 import Resumecont from './components/resume';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
+
+
 function App() {
   return (
     <Router>
@@ -19,7 +21,6 @@ function App() {
 
       <div className='rightcontainer'>
         <Routes>
-          {/* Startsidan */}
           <Route path="/" element={
             <>
               <Allaboutbio />
@@ -29,8 +30,7 @@ function App() {
               <Footer />
             </>
           } />
-
-          {/* Kontakt sidan */}
+          
           <Route path="/kontakt" element={ <>
           <SendingEmail />
           <Footer /></>} />
@@ -39,9 +39,10 @@ function App() {
       </div>
       
     </div>
-    
+
   </Router>
-    
+
+
   );
 }
 
