@@ -16,10 +16,14 @@
     text-align: left;
 
 }
-.fixingit, .fixingit2, .fixingit3, .fixingit4, .fixingit5 {
-    display: flex;
-    justify-items: center;
-    border: 1px solid #c3cacf;
+
+.fixingit, .fixingit2 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
 }
 
 .fixingit {
@@ -27,25 +31,7 @@
 }
 
 .fixingit2 {
-    width: 50%;
-}
-
-.fixingit3 {
-    width: 40%;
-}
-
-.fixingit4 {
-    width: 30%;
-}
-
-.fixingit5 {
-    width: 20%;
-    transition: all 0.3s ease-in-out;
-}
-
-.fixingit:hover, .fixingit2:hover, .fixingit3:hover, .fixingit4:hover, .fixingit5:hover {
-    border: 1px solid rgb(255, 255, 255);
-   
+    width: 50vh;
 }
 
 @media (min-width: 1100px) {

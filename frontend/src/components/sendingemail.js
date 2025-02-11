@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from '../styles/sendingemail.module.css'
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import {useState} from 'react';
+import axios from 'axios';
 
 
 const SendingEmail = () => {
@@ -23,6 +23,7 @@ const SendingEmail = () => {
     const handlingSubmit = async (e) => {
         e.preventDefault();
         try {
+           const response = await axios.post('http://127.0.0.1:8000/sendmail', input);
             
         } catch (error) {
             setErrors(error.response.data)
@@ -38,6 +39,7 @@ const SendingEmail = () => {
             <Form className={styles.formcontainer} onSubmit={handlingSubmit}>
       <Form.Group className={`mb-3 ${styles.allinputs}`} controlId="exampleForm.ControlInput1">
         <Form.Label className={styles.alllmylables}>Namn</Form.Label>
+        {errors.name}
         <Form.Control type="text"
          placeholder="Skriv ditt namn här!"
          name="name"
@@ -47,6 +49,7 @@ const SendingEmail = () => {
       </Form.Group>
       <Form.Group className={`mb-3 ${styles.allinputs}`} controlId="exampleForm.ControlInput1">
         <Form.Label className={styles.alllmylables}>Email</Form.Label>
+        {errors.email_here}
         <Form.Control type="email"
          placeholder="Skriv din email här!"
          name="email_here"
@@ -56,6 +59,7 @@ const SendingEmail = () => {
       </Form.Group>
       <Form.Group className={`mb-3 ${styles.allinputs}`} controlId="exampleForm.ControlTextarea1">
         <Form.Label className={styles.alllmylables}>Vad är din fråga?</Form.Label>
+        {errors.description}
         <Form.Control as="textarea" rows={3}
         name="description"
         value={description}

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import SendingEmail from './components/sendingemail';
 import Allaboutbio from './components/Allaboutme';
 import { Route, Routes } from "react-router-dom";
+import Resumecont from './components/resume';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 function App() {
@@ -24,6 +25,7 @@ function App() {
               <Allaboutbio />
               <Myprojectscomp />
               <SkillsSection />
+              <Resumecont />
               <Footer />
             </>
           } />

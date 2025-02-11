@@ -120,10 +120,10 @@ li{
         width: 20vh;
     }
     .divfirsttop, .divfirstbottom{
-       height: 30vh;
+       height: 27vh;
     }
     .skillcontainer:hover{ 
-        height: 60vh;
+        height: auto;
     
     }
    
@@ -131,11 +131,8 @@ li{
 @media (min-width: 1200px) {
    
     
-    .divfirsttop, .divfirstbottom {
-        height: 30vh;
-    }
     .skillcontainer:hover {
-        height: 60vh;
+        
     }
     .technopart, .versionss, .database, .tools, .distrubuuut, .testing{
         margin-right: 2vh;
