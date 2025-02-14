@@ -14,13 +14,13 @@ const AboutMe = () => {
                     </p>
                     <div className={styles.links}>
                         <div className={styles.githublink}>
-                            <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer"><i className={`${styles.iconlife} fa-brands fa-github icon`}></i></a>
+                            <a href="https://github.com/Timalexanderandersson" target="_blank" rel="noopener noreferrer"><i className={`${styles.iconlife} fa-brands fa-github icon`}></i></a>
                         </div>
                         <div className={styles.linkedinlink}>
-                            <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer"><i className={`${styles.iconlife} fa-brands fa-linkedin icon`}></i></a>
+                            <a href="https://www.linkedin.com/in/tim-andersson-5341a41bb" target="_blank" rel="noopener noreferrer"><i className={`${styles.iconlife} fa-brands fa-linkedin icon`}></i></a>
                         </div>
                         <div className={styles.instagramlink}>
-                            <a href="https://www.instagram.com/your-instagram-username" target="_blank" rel="noopener noreferrer"><i className={`${styles.iconlife} fa-brands fa-instagram icon`}></i></a>
+                            <a href="https://www.instagram.com/timandersson94" target="_blank" rel="noopener noreferrer"><i className={`${styles.iconlife} fa-brands fa-instagram icon`}></i></a>
                         </div>
 
                     </div>

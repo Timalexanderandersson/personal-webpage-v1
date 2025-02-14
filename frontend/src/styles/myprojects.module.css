@@ -27,19 +27,21 @@
 }
 
 .projectImage {
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
     border-radius: 3px;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     margin-right: 1vh;
     transition: all 0.5s ease-in-out;
 }
 
 .projectContent {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     padding-top: 1vh;
-    padding-left: 3vh;
+
 }
 
 .projectLink {
@@ -105,11 +107,20 @@
 
 
 @media screen and (min-width: 300px) {
+    .projectContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1vh;
+        padding-left: 3vh;
+    }
+  
     .projectImage {
-        width: 11vh;
-        height: 11vh;
+        width: 12vh;
+        height: 12vh;
         margin-top: 3vh;
         margin-bottom: 3vh;
+        margin-right: 4vh;
     }
 
     .projectTech {
@@ -124,6 +135,16 @@
         margin-left: 1vh;
         margin-right: 1vh;
     }
+}
+@media screen and (min-width: 450px) {
+    .projectContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 1vh;
+        padding-left: 3vh;
+    }
+
 }
 
 @media screen and (min-width: 550px) {
