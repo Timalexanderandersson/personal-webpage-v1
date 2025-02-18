@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from '../styles/skillsection.module.css'
+import IntersectionObserverComponent from '../components/fadeinfix'
 
-const SkillsSection = () => {
+const SkillsSection = ({options}) => {
     return (
+        <IntersectionObserverComponent options={options}>
         <div className={styles.skillsectiondiv} id="skills" >
+            
             <div className={styles.skillcontainer}>
                 <h2>Teknisk Kompetens</h2>
                 <div className={styles.containsall}>
@@ -39,7 +42,7 @@ const SkillsSection = () => {
                         </div>
 
                     </div>
-
+                    <hr className={styles.hrstyling}></hr>
                     <div className={styles.divfirstbottom}>
                         <div className={styles.versionss}>
                             <h5 className={styles.heading}>Versionshantering</h5>
@@ -56,19 +59,29 @@ const SkillsSection = () => {
                             </ul>
                         </div>
 
-                        <div className={styles.testing}>
-                            <h5 className={styles.heading}>Testing</h5>
-                            <ul className={styles.deletliststyle}>
-                                <li>Django testing(pytest)</li>
-                            </ul>
-                        </div>
+                        
 
                     </div>
 
                 </div>
+                <hr className={styles.hrstyling}></hr>
+                <div className={styles.firstflipping}>
+                    <div className={styles.innerdivfardown}>
+                    <div className={styles.testing}>
+                            <h5 className={styles.newtesting}>Testing</h5>
+                            <ul className={styles.newlistcss}>
+                                <li className={styles.wochill}>Django testing(pytest)</li>
+                            </ul>
+                        </div>
 
+                    </div>
+                
+                </div>
             </div>
+            
         </div>
+        </IntersectionObserverComponent>
+        
     );
 };
 

@@ -31,6 +31,15 @@
     width: 95%;
 
 }
+.divfirsttop {
+    width: 100%;
+
+        
+    }
+.divfirstbottom {
+    width: 100%;
+        
+    }
 
 .technopart,
 .versionss,
@@ -38,14 +47,21 @@
 .tools,
 .distrubuuut,
 .testing {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     color: #afc3d6;
     list-style-type: none;
+    width: 100%;
+    padding-right: 5vh;
 }
 
 
 .deletliststyle {
-    list-style-type: none;
-    padding-right: 3vh;
+    list-style-type:none;
+    text-decoration: underline;
+    text-align: center;
+    
 
 }
 
@@ -55,6 +71,10 @@
     font-weight: 600;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    text-align: center;
+    width: 100%;
+    padding-left: 5vh;
+    
 }
 
 li {
@@ -63,109 +83,309 @@ li {
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+.hrstyling{
+    width: 100%;
+    height: 1px;
+  border: 0;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.newlistcss{
+
+    list-style-type:none;
+    text-decoration: underline;
+
+}
 
 @media (min-width: 768px) {
 
-    .divfirsttop,
-    .divfirstbottom {
+    .divfirsttop {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 2vh;
-        width: 100%;
         font-size: 1rem;
-        font-weight: 600;
+        font-weight: 400;
+        width: 15vh;
+        padding-right: 1vh;
+        margin-right: 1vh;
+        
+    }
+    .divfirstbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 19vh;
+        text-align: left;
+
     }
 
+   
     li {
-        font-size: 0.8rem;
+        width: 100%;
+        font-size: 0.9rem;
         font-weight: 500;
         margin-top: 1vh;
         margin-bottom: 1vh;
+        padding-left: 3vh;
+        text-align: center;
     }
 
     .heading {
         color: #dde4eb;
         font-size: 1.1rem;
         font-weight: 600;
-        padding-left: 3vh;
+        padding-right: 4vh;
+       
+        
 
     }
+    .innerdivfardown{
+    width: 100%;
+        
+    }
+    .newtesting{
+      margin-left: 6vh;
+        
+    }
+    .newlistcss{
+        width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin-left: 7vh;
+    }
+    .wochill{
+        width: 100%;
+        padding-right: 13vh;
+    }
+   
 }
 
 @media (min-width: 850px) {
-    .heading {
-        color: #dde4eb;
-        font-size: 1.3rem;
-        font-weight: 600;
-        padding-left: 2vh;
+    
+    .divfirsttop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 17vh;
+        padding-right: 1vh;
+        margin-right: 1vh;
+        
+    }
+    .divfirstbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 19vh;
+        text-align: left;
 
     }
 
+   
+
+    .heading {
+        color: #dde4eb;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-right: 4vh;
+       
+        
+
+    }
+    
+    .firstflipping{
+        
+        width:100%;
+    }
+    .newlistcss{
+        width: 100%;
+        list-style-type: none;
+        margin-left: 5vh;
+    }
     li {
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding-left: 3vh;
+        text-align: center;
+    }
+    
+}
+
+@media (min-width: 950px) {
+    .divfirsttop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 17vh;
+        padding-right: 1vh;
+        margin-right: 1vh;
+        
+    }
+    .divfirstbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 19vh;
+        text-align: left;
+
+    }
+
+   
+
+    .heading {
+        color: #dde4eb;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-right: 4vh;
+       
+        
+
+    }
+    
+    .firstflipping{
+        
+        width:100%;
+    }
+    .newlistcss{
+        width: 100%;
+        list-style-type: none;
+        margin-left: 5vh;
+    }
+    li {
+        width: 100%;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding-left: 3vh;
+        text-align: center;
+    }
+}
+@media (min-width: 1100px) {
+    .divfirsttop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 17vh;
+        padding-right: 1vh;
+        margin-right: 1vh;
+        
+    }
+    .divfirstbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 19vh;
+        text-align: left;
+
+    }
+
+   
+
+    .heading {
+        color: #dde4eb;
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding-right: 4vh;
+       
+        
+
+    }
+    
+    .firstflipping{
+        
+        width:100%;
+    }
+    .newlistcss{
+        width: 100%;
+        list-style-type: none;
+        margin-left: 5vh;
+    }
+    li {
+        width: 100%;
         font-size: 1rem;
         font-weight: 500;
         margin-top: 1vh;
         margin-bottom: 1vh;
-    }
-
-}
-
-@media (min-width: 950px) {
-    .heading {
-        margin-left: 1vh;
-
-    }
-
-    .tools {
-        width: 17vh;
-    }
-
-    .testing {
-        width: 16vh;
-    }
-
-}
-
-@media (min-width: 1100px) {
-    .heading {
-        font-size: 1.4rem;
-        padding-left: 1vh;
-    }
-
-    .tools,
-    .testing {
-        width: 20vh;
-    }
-
-    .divfirsttop,
-    .divfirstbottom {
-        height: 27vh;
-    }
-
-    .skillcontainer:hover {
-        height: auto;
-
+        padding-left: 3vh;
+        text-align: center;
     }
 
 }
 
 @media (min-width: 1200px) {
 
+    .divfirsttop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 400;
+        width: 20vh;
+        padding-right: 1vh;
+        margin-right: 1vh;
+        
+    }
+    .divfirstbottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20vh;
+        text-align: left;
+
+    }
+
+   
+
+    .heading {
+        color: #dde4eb;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-right: 15vh;
+        width: 36vh;
+        text-align: left;
+       
+        
+
+    }
+    
+    .firstflipping{
+        
+        width:100%;
+    }
+    .newlistcss{
+        width: 100%;
+        list-style-type: none;
+        margin-left: 5vh;
+    }
+    li {
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        padding-left: 5vh;
+        text-align: center;
+    }
     .technopart,
-    .versionss,
-    .database,
-    .tools,
-    .distrubuuut,
-    .testing {
-        margin-right: 2vh;
-    }
-
-    .skillcontainer:hover {
-        width: 80%;
-    }
-
-    .skillcontainer {
-        width: 80%;
-    }
+.versionss,
+.database,
+.tools,
+.distrubuuut,
+.testing {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    color: #afc3d6;
+    list-style-type: none;
+    width: 100%;
+    text-align:  center;
+}
 }

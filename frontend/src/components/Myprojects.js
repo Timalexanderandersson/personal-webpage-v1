@@ -15,8 +15,9 @@ const Myprojectscomp = ({options}) => {
 
    <div className={styles.projectsdiv} id="projects">
         <h2 className={styles.projectTitle}>Projekt</h2>
-        <IntersectionObserverComponent options={options}>
+        
         <div className={styles.project} >
+        <IntersectionObserverComponent options={options}>
             <a className={styles.projectLink} href="https://github.com/Timalexanderandersson/read-and-review-webpage" target="_blank" rel="noopener noreferrer">Read & Review</a>
             <div className={styles.projectContent}>
                 <img className={styles.projectImage} src={frontImage} alt="Läs & Recensera" />
@@ -39,12 +40,14 @@ const Myprojectscomp = ({options}) => {
                 <p className={styles.projectTech}>Bootstrap</p>
                 <a className={styles.githublink} href="https://github.com/Timalexanderandersson/read-and-review-webpage" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
             </div>
+            </IntersectionObserverComponent>
         </div>
         
-        </IntersectionObserverComponent>
+        
 
-        <IntersectionObserverComponent options={options}>
-<div className={styles.project}>
+        
+        <div className={styles.project}>
+         <IntersectionObserverComponent options={options}>
             <a className={styles.projectLink} href="https://github.com/Timalexanderandersson/Task-Reminder" target="_blank" rel="noopener noreferrer">Task Reminder</a>
             <div className={styles.projectContent}>
                 <img className={styles.projectImage} src={frontImage2} alt="Projekt 2" />
@@ -65,14 +68,15 @@ const Myprojectscomp = ({options}) => {
                 <p className={styles.projectTech}>Bootstrap</p>
                 <a className={styles.githublink} href="https://github.com/Timalexanderandersson/Task-Reminder" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
             </div>
-
+            </IntersectionObserverComponent>
         </div>
 
 
-        </IntersectionObserverComponent>
+        
 
-        <IntersectionObserverComponent options={options}>
+        
         <div className={styles.project}>
+        <IntersectionObserverComponent options={options}>
             <a className={styles.projectLink} href="https://github.com/Timalexanderandersson/Basic-Knowledge-Quiz" target="_blank" rel="noopener noreferrer">Basic Knowledge Quiz</a>
             <div className={styles.projectContent}>
                 <img className={styles.projectImage} src={frontImage3} alt="Projekt 3" />
@@ -85,10 +89,12 @@ const Myprojectscomp = ({options}) => {
                 <p className={styles.projectTech}>Heroku</p>
                 <a className={styles.githublink} href="https://github.com/Timalexanderandersson/Basic-Knowledge-Quiz" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
             </div>
+            </IntersectionObserverComponent>
         </div>
-        </IntersectionObserverComponent>
-        <IntersectionObserverComponent options={options}>
+      
+        
         <div className={styles.project}>
+        <IntersectionObserverComponent options={options}>
             <a className={styles.projectLink} href="https://github.com/Timalexanderandersson/Rock-Paper-Scissors-Game" target="_blank" rel="noopener noreferrer">Rock Paper Scissors Game</a>
             <div className={styles.projectContent}>
                 <img className={styles.projectImage} src={frontImage4} alt="Projekt 4" />
@@ -103,11 +109,13 @@ const Myprojectscomp = ({options}) => {
                 <p className={styles.projectTech}>Javascript</p>
                 <a className={styles.githublink} href="https://github.com/Timalexanderandersson/Rock-Paper-Scissors-Game" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
             </div>
+            </IntersectionObserverComponent>
         </div>
 
-        </IntersectionObserverComponent>
-        <IntersectionObserverComponent options={options}>
+        
+      
         <div className={styles.project}>
+        <IntersectionObserverComponent options={options}>
             <a className={styles.projectLink} href="https://github.com/Timalexanderandersson/Get-More-Sleep-Website" target="_blank" rel="noopener noreferrer">Get More Sleep</a>
             <div className={styles.projectContent}>
                 <img className={styles.projectImage} src={frontImage5} alt="Projekt 5" />
@@ -122,8 +130,9 @@ const Myprojectscomp = ({options}) => {
                 <p className={styles.projectTech}></p>
                 <a className={styles.githublink} href="https://github.com/Timalexanderandersson/Get-More-Sleep-Website" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
             </div>
+            </IntersectionObserverComponent>
         </div>
-        </IntersectionObserverComponent>
+        
 
     </div>
 

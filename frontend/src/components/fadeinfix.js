@@ -10,7 +10,7 @@ const IntersectionObserverComponent = ({ children, options }) => {
         const observer = new IntersectionObserver((entries) => {
             const [entry] = entries;
             setIsView(entry.isIntersecting);
-        }, options);
+        },options);
 
         if (targetRef.current) {
             observer.observe(targetRef.current);

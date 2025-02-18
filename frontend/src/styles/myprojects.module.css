@@ -15,8 +15,8 @@
 .wowowow{
     padding-left: 1vh;
     opacity: 0;
-    transform: translateY(15px);
-    transition: opacity 0.8s ease-out , transform 0.3s ease-out;
+    transform: translateY(12px);
+    transition: opacity 0.7s ease-out , transform 0.7s ease-out;
 
 }
 .wowowow.visible{

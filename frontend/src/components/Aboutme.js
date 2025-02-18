@@ -9,8 +9,7 @@ const AboutMe = () => {
                 <div className={styles.newdiv}>
                     <h1 className='mt-4'>Tim Andersson</h1>
                     <p className='mt-3'>
-                        Denna sida är skapad för visa mina projekt,
-                        ge dig möjlighet att ladda ner mitt CV och hitta kontaktinformation om du vill samarbeta eller bara vill veta mer.
+                    Den här sidan är skapad för att visa mina projekt, erbjuda kontaktinformation och ge dig möjlighet att skicka meddelanden om du vill samarbeta eller bara veta mer om mig.
                     </p>
                     <div className={styles.links}>
                         <div className={styles.githublink}>

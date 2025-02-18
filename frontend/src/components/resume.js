@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from '../styles/resume.module.css';
+import IntersectionObserverComponent from '../components/fadeinfix'
 
-const Resumecont = () => {
+const Resumecont = ({options}) => {
     return (
+        <IntersectionObserverComponent options={options}>
         <div className={styles.container}>
             <div className={styles.resumediv} id="kontaktamig">
                 <div className={styles.resumercontainer}>
@@ -18,6 +20,7 @@ const Resumecont = () => {
                 
             </div>
         </div>
+        </IntersectionObserverComponent>
     );
 };
 
