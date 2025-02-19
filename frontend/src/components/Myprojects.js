@@ -11,7 +11,6 @@ import IntersectionObserverComponent from '../components/fadeinfix'
 const Myprojectscomp = ({options}) => {
 
     return (<>
-    
 
    <div className={styles.projectsdiv} id="projects">
         <h2 className={styles.projectTitle}>Projekt</h2>
