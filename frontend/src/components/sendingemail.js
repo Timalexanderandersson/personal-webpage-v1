@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/sendingemail.module.css'
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
+import axios from 'axios';
 
 
 
@@ -23,6 +24,7 @@ const SendingEmail = () => {
     const handlingSubmit = async (e) => {
         e.preventDefault();
         try {
+            await axios.post('https://yourapiendpoint.com/send-email', input);
             
 
         } catch (error) {

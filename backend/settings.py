@@ -32,6 +32,7 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 
+
 #jango rest default
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
@@ -54,6 +55,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'sending_email',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -64,9 +66,18 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Lägg till din frontend-domän här
+]
+
+CORS_ALLOWED_METHODS = [
+    "POST",
+]
 ROOT_URLCONF = 'backend.urls'
+
 
 TEMPLATES = [
     {
