@@ -27,7 +27,6 @@ const SendingEmail = () => {
         try {
             await api.post('sendmail/', input);
             
-
         } catch (error) {
            setErrors(error.response.data)
            let errorhere = error.response.data
