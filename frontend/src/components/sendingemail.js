@@ -24,11 +24,23 @@ const SendingEmail = () => {
     const handlingSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://yourapiendpoint.com/send-email', input);
+            await axios.post('https://backend-api-my-own-website-7cde0046b9f5.herokuapp.com/sendmail/', input);
             
 
         } catch (error) {
-            setErrors(error.response.data)
+           setErrors(error.response.data)
+           let errorhere = error.response.data
+            if (errorhere.name){
+                errorhere.name = "Skriv ditt namn hära!"
+            }
+            if (errorhere.email_here){
+                errorhere.email_here = "Fyll i din epost!"
+            }
+            if (errorhere.description){
+                errorhere.description = "Du måste skriva något!"
+            }
+            
+            
         }
 
     }
@@ -40,8 +52,10 @@ const SendingEmail = () => {
                 <h4 className={styles.heading}>skicka ett meddelande till mig!</h4>
                 <Form className={styles.formcontainer} onSubmit={handlingSubmit}>
                     <Form.Group className={`mb-3 ${styles.allinputs}`} controlId="exampleForm.ControlInput1">
+                    
                         <Form.Label className={styles.alllmylables}>Namn</Form.Label>
-                        {errors.name}
+                        {errors.name && <div className="alert alert-danger" role="alert">{errors.name}</div>}
+                        
                         <Form.Control type="text"
                             placeholder="Skriv ditt namn här!"
                             name="name"
@@ -51,7 +65,7 @@ const SendingEmail = () => {
                     </Form.Group>
                     <Form.Group className={`mb-3 ${styles.allinputs}`} controlId="exampleForm.ControlInput1">
                         <Form.Label className={styles.alllmylables}>Email</Form.Label>
-                        {errors.email_here}
+                        {errors.email_here && <div className="alert alert-danger" role="alert">{errors.email_here}</div>}
                         <Form.Control type="email"
                             placeholder="Skriv din email här!"
                             name="email_here"
@@ -61,7 +75,7 @@ const SendingEmail = () => {
                     </Form.Group>
                     <Form.Group className={`mb-3 ${styles.allinputs}`} controlId="exampleForm.ControlTextarea1">
                         <Form.Label className={styles.alllmylables}>Vad är din fråga?</Form.Label>
-                        {errors.description}
+                        {errors.description && <div className="alert alert-danger" role="alert" >{errors.description}</div>}
                         <Form.Control as="textarea" rows={3}
                             name="description"
                             value={description}

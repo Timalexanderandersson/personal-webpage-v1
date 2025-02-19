@@ -3,7 +3,7 @@
     background-color: #23394d;
     display: flex;
     justify-content: center;
-    height: 90%;
+    height: auto;
     padding-top: 3vh;
 }
 
@@ -14,7 +14,7 @@
     background-color: #253b4d;
     transition: all 0.6s ease-in-out;
     width: 80%;
-    height: 90%;
+    height: auto;
 
 }
 
@@ -66,7 +66,7 @@
 
     .emailcontainer {
         width: 80%;
-        height: 80%;
+        height: auto;
     }
 }
 
@@ -74,7 +74,7 @@
 @media (min-width: 500px) {
     .emailcontainer {
         width: 90%;
-        height: 90%;
+        height: auto;
     }
 
     .formcontainer {
@@ -92,7 +92,7 @@
 @media (min-width: 650px) {
     .emailcontainer {
         width: 90%;
-        height: 80%;
+        height: auto;
     }
 
     .formcontainer {
@@ -110,7 +110,7 @@
     .emailcontainer {
         margin-top: 15vh;
         width: 80%;
-        height: 65%;
+        height: auto;
     }
 
     .formcontainer {
