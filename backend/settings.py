@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS"), 'https://my-webpage-v1-309966656ad2.herokuapp.com/']
+ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS"), os.environ.get("MY-FRONTEND")]
 
 
 
@@ -71,7 +71,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-      'https://my-webpage-v1-309966656ad2.herokuapp.com/'  # Lägg till din frontend-domän här
+    os.environ.get("MY-FRONTEND"),  # Lägg till din frontend-domän här
 ]
 
 CORS_ALLOWED_METHODS = [
