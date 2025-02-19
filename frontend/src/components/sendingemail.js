@@ -3,6 +3,7 @@ import styles from '../styles/sendingemail.module.css'
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import axios from 'axios';
+import api from  '../api'
 
 
 
@@ -24,7 +25,7 @@ const SendingEmail = () => {
     const handlingSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://backend-api-my-own-website-7cde0046b9f5.herokuapp.com/sendmail/', input);
+            await api.post('sendmail/', input);
             
 
         } catch (error) {
