@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 if os.path.exists("env.py"):
-    import backend.env as env
+    import env as env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS")]
+ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS"), '127.0.0.1']
 
 
 #jango rest default
@@ -70,6 +70,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    os.environ["MY-FRONTEND"]
 ]
 
 CORS_ALLOWED_METHODS = [
