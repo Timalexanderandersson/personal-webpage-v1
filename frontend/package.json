@@ -39,5 +39,8 @@
   },
   "devDependencies": {
     "react-router-dom": "^7.1.5"
-  }
+  },
+  "engines": {
+  "node": "18.x"
+}
 }
