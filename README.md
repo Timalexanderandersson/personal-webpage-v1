@@ -98,19 +98,24 @@ This is a **Django REST** backend API. The backend API handles email functionali
 
 
 Specify the front-end URL for API communication
+
 os.environ["MY_FRONTEND"] = "https://yourfrontend.com"  
 
 Allowed domains that can make requests to your backend
+
 os.environ["ALLOWED_HOSTS"] = "localhost, .yourdomain.com" 
 
 
 Email server username
+
 os.environ["EMAIL_HOST_USER"] = "your_email@example.com" 
 
 Email server password
+
 os.environ["EMAIL_HOST_PASSWORD"] = "your_email_password" 
 
 Django secret key used to secure data and sessions
+
 os.environ["SECRET_KEY"] = "your_secret_key" 
 
 
@@ -139,21 +144,27 @@ The frontend is deployed on **Heroku**.
 
 
 Specify the front-end URL for API communication
+
 os.environ["MY_FRONTEND"] = "https://yourfrontend.com"  
 
 Allowed domains that can make requests to your backend
+
 os.environ["ALLOWED_HOSTS"] = "localhost, .yourdomain.com" 
 
 Email server username
+
 os.environ["EMAIL_HOST_USER"] = "your_email@example.com" 
 
 Email server password
+
 os.environ["EMAIL_HOST_PASSWORD"] = "your_email_password" 
 
 Django secret key used to secure data and sessions
+
 os.environ["SECRET_KEY"] = "your_secret_key" 
 
 Disable automatic collectstatic on Heroku (useful for custom static handling)
+
 os.environ["DISABLE_COLLECTSTATIC"] = "1" 
 
 
@@ -200,16 +211,27 @@ The following libraries are used in this project:
 ### Dependencies
 
 **asgiref==3.8.1**
+
 **Django==5.1.4**
+
 **django-cors-headers==4.6.0**
+
 **django-crispy-forms==2.3**
+
 **djangorestframework==3.15.2**
+
 **gunicorn==23.0.0**
+
 **packaging==24.2**
+
 **pillow==11.1.0**
+
 **psycopg2-binary==2.9.10**
+
 **python-dotenv==1.0.1**
+
 **sqlparse==0.5.2**
+
 **tzdata==2024.1**
 
 ## Problems with Deployment
