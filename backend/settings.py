@@ -70,7 +70,9 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    os.environ["MY-FRONTEND"]
+    os.environ["MY-FRONTEND"],
+    os.environ["MY-FRONTENDSECOND"],
+
 ]
 
 CORS_ALLOWED_METHODS = [
