@@ -70,14 +70,10 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-<<<<<<< HEAD
       'https://my-webpage-v1-309966656ad2.herokuapp.com/',
-        "https://timandersson.dev"   # Lägg till din frontend-domän här
-=======
+        "https://timandersson.dev" , # Lägg till din frontend-domän här
     os.environ["MY-FRONTEND"],
     os.environ["MY-FRONTENDSECOND"],
-
->>>>>>> d31f2e40c4aaa7da2a560e2dd87d5418d2721f05
 ]
 
 CORS_ALLOWED_METHODS = [
