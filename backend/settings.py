@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 if os.path.exists("env.py"):
-    import env
+    import env as env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,8 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS"), 'https://my-webpage-v1-309966656ad2.herokuapp.com/']
-
+ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOSTS")]
 
 
 #jango rest default
@@ -71,8 +70,14 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+<<<<<<< HEAD
       'https://my-webpage-v1-309966656ad2.herokuapp.com/',
         "https://timandersson.dev"   # Lägg till din frontend-domän här
+=======
+    os.environ["MY-FRONTEND"],
+    os.environ["MY-FRONTENDSECOND"],
+
+>>>>>>> d31f2e40c4aaa7da2a560e2dd87d5418d2721f05
 ]
 
 CORS_ALLOWED_METHODS = [
